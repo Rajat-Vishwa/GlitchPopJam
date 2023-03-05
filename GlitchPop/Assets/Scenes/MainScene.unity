@@ -586,13 +586,8 @@ MonoBehaviour:
   rb: {fileID: 0}
   spriteTransform: {fileID: 4000013926611908}
   moveDir: 0
-  isJumping: 0
-  wantJump: 0
-  isGrounded: 0
-  attacking: 0
   moveSpeed: 200
-  jumpSpeed: 7
-  footOverLapCircleRadius: 0.1
+  attacking: 0
 --- !u!70 &706068183
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

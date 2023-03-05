@@ -12,11 +12,14 @@ public class PlayerAnimation : MonoBehaviour
         playerAnimator = gameObject.GetComponentInChildren<Animator>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
+        playerAnimator.SetBool("attacking", movementScript.attacking);
+        
         if(movementScript.moveDir != 0){
             playerAnimator.SetBool("walking", true);
-        }else{
+        }
+        else{
             playerAnimator.SetBool("walking", false);
         }
     }
