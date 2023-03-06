@@ -6,16 +6,16 @@ public class EnemyAnimation : MonoBehaviour
 {
     public Animator playerAnimator;
     public EnemyBehaviour movementScript;
+    public CombatSystem combatScript;
     void Start()
     {
         movementScript = gameObject.GetComponent<EnemyBehaviour>();
         playerAnimator = gameObject.GetComponentInChildren<Animator>();
+        combatScript.animator = playerAnimator;
     }
 
     void FixedUpdate()
-    {
-        playerAnimator.SetBool("attacking", movementScript.attacking);
-        
+    {        
         if(movementScript.moveDir != 0){
             playerAnimator.SetBool("walking", true);
         }

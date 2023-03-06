@@ -12,10 +12,18 @@ public class PlayerMovement : MonoBehaviour
     //public float footOverLapCircleRadius = 0.1f;
     public float moveSpeed = 100;
     public bool attacking = false;
+    public Animator animator;
+    public CombatSystem combatScript;
+    public CharacterStats stats;
+
+    public float attackCoolDownTimer;
    
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        animator = gameObject.GetComponentInChildren<Animator>();
+        combatScript = gameObject.GetComponent<CombatSystem>();
+        stats = gameObject.GetComponentInChildren<CharacterStats>();
     }
 
     void Update()
@@ -25,6 +33,17 @@ public class PlayerMovement : MonoBehaviour
         // if(Input.GetKeyDown("space") && isGrounded){
         //     wantJump = true;
         // }
+
+        if(Input.GetMouseButtonDown(0)){
+            if(attackCoolDownTimer <= 0){
+                animator.SetTrigger("attack");
+                combatScript.Attack();
+                attackCoolDownTimer = 1/stats.attackRate;
+            }
+        }
+
+
+        if(attackCoolDownTimer > 0) attackCoolDownTimer -= Time.deltaTime;
     }
 
     void FixedUpdate()
@@ -38,7 +57,10 @@ public class PlayerMovement : MonoBehaviour
         // }
 
         if(moveDir != 0){
+            animator.SetBool("walking", true);
             spriteTransform.localScale = new Vector3(-moveDir, 1, 1);
+        }else{
+            animator.SetBool("walking", false);
         }
         
         Vector2 vel = Vector2.zero;
@@ -53,4 +75,6 @@ public class PlayerMovement : MonoBehaviour
         // }
         rb.velocity = vel;
     }
+
+
 }

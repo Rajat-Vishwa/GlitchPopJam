@@ -9,13 +9,11 @@ public class CharacterManager : MonoBehaviour
     public int maxCharacters;
     public bool Switch = false;
     public PlayerMovement movementScript;
-    public PlayerAnimation animationScript;
     public CombatSystem combatScript;
     void Start()
     {
         maxCharacters = Characters.Length;
         movementScript = gameObject.GetComponent<PlayerMovement>();
-        animationScript = gameObject.GetComponent<PlayerAnimation>();
         combatScript = gameObject.GetComponent<CombatSystem>();
         ChangeCharacter();
     }
@@ -39,7 +37,8 @@ public class CharacterManager : MonoBehaviour
         }
         currentCharacter = Characters[index];
         movementScript.spriteTransform = currentCharacter.transform;
-        animationScript.playerAnimator = currentCharacter.GetComponent<Animator>();
+        movementScript.animator = currentCharacter.GetComponent<Animator>();
         combatScript.stats = currentCharacter.GetComponent<CharacterStats>();
+        movementScript.stats = currentCharacter.GetComponent<CharacterStats>();
     }
 }

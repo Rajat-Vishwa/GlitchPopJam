@@ -10,9 +10,10 @@ public class CombatSystem : MonoBehaviour
     public float overlapCircleRadius = 0.25f;
     public float currentHealth;
 
+
     void Start(){
         stats = gameObject.GetComponentInChildren<CharacterStats>();
-        attackPoint = transform.Find("AttackPoint");
+        //attackPoint = transform.Find("AttackPoint");
         currentHealth = stats.maxHealth;
     }
 
@@ -35,6 +36,7 @@ public class CombatSystem : MonoBehaviour
     public void Attack(){
         Collider2D col = Physics2D.OverlapCircle(attackPoint.position, overlapCircleRadius);
         if(col != null){
+            Debug.Log("HITTTT");
             if(col.tag == "Player" || col.tag == "Enemy"){
                 col.gameObject.GetComponent<CombatSystem>().TakeDamage(stats.attackDamage);
             }
