@@ -288,6 +288,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c09aa47d6e0e954f899cb8efe5a6816, type: 3}
+--- !u!1001 &698807946
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7208481279798210084, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
+      propertyPath: m_Size.x
+      value: 1.3193724
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208481279798210085, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208481279798210085, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.6229
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208481279798210085, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.1461496
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208481279798210085, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208481279798210085, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208481279798210085, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208481279798210085, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208481279798210085, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208481279798210085, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208481279798210085, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208481279798210085, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208481279798210087, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
+      propertyPath: m_Name
+      value: PF Village Props - Platform S
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b66942e8458865e4990a5fc39874e9a1, type: 3}
 --- !u!1001 &900043810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -750,7 +811,7 @@ Transform:
   - {fileID: 54146100}
   - {fileID: 2052410072}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1877086343
 PrefabInstance:
