@@ -6,4 +6,7 @@ public class CharacterStats : MonoBehaviour
     public float maxHealth;
     public float attackDamage;
     public float moveSpeed;
+    public float regenRate;
+    public float attackRate;
+    public bool alive = true;
 }

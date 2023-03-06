@@ -3686,6 +3686,7 @@ GameObject:
   - component: {fileID: 369586367}
   - component: {fileID: 369586365}
   - component: {fileID: 369586370}
+  - component: {fileID: 369586371}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -3779,6 +3780,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAnimator: {fileID: 0}
   movementScript: {fileID: 0}
+--- !u!114 &369586371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369586364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57b2c15eab691044a80bcf07f352ed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPoint: {fileID: 0}
+  animator: {fileID: 0}
+  stats: {fileID: 0}
+  overlapCircleRadius: 0.25
+  currentHealth: 0
 --- !u!1 &398882696
 GameObject:
   m_ObjectHideFlags: 0
@@ -6524,17 +6542,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Characters:
   - {fileID: 1000012210010532}
-  - {fileID: 908407937}
-  - {fileID: 7099214821549823500}
-  - {fileID: 7298432280669900126}
-  - {fileID: 7836955219498793233}
-  - {fileID: 1906757734121033156}
-  - {fileID: 5455228735115405202}
   currentCharacter: {fileID: 0}
   maxCharacters: 0
   Switch: 0
   movementScript: {fileID: 0}
   animationScript: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!114 &706068186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6547,6 +6560,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e57b2c15eab691044a80bcf07f352ed1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackPoint: {fileID: 1157180546}
+  animator: {fileID: 0}
+  stats: {fileID: 0}
+  overlapCircleRadius: 0.25
+  currentHealth: 0
 --- !u!1 &740922064
 GameObject:
   m_ObjectHideFlags: 0
@@ -7824,7 +7842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &908407938
 Transform:
   m_ObjectHideFlags: 0
@@ -7875,7 +7893,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  currentHealth: 0
   maxHealth: 0
   attackDamage: 0
   moveSpeed: 0
@@ -14740,6 +14757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1874620677}
   - component: {fileID: 1874620678}
+  - component: {fileID: 1874620679}
   m_Layer: 7
   m_Name: Soldier
   m_TagString: Untagged
@@ -14784,6 +14802,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1874620679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874620676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35bbab939b2b01c4ab077f64a63370d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
+  maxHealth: 100
+  attackDamage: 20
+  moveSpeed: 20
 --- !u!1 &1882489578
 GameObject:
   m_ObjectHideFlags: 0
@@ -17008,7 +17042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000012462578684
 GameObject:
   m_ObjectHideFlags: 0
@@ -17221,7 +17255,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  currentHealth: 0
   maxHealth: 0
   attackDamage: 0
   moveSpeed: 0
@@ -18336,7 +18369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  currentHealth: 0
   maxHealth: 0
   attackDamage: 0
   moveSpeed: 0
@@ -18891,7 +18923,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  currentHealth: 0
   maxHealth: 0
   attackDamage: 0
   moveSpeed: 0
@@ -19753,7 +19784,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  currentHealth: 0
   maxHealth: 0
   attackDamage: 0
   moveSpeed: 0
@@ -20087,7 +20117,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  currentHealth: 0
   maxHealth: 0
   attackDamage: 0
   moveSpeed: 0
@@ -20891,7 +20920,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  currentHealth: 0
   maxHealth: 0
   attackDamage: 0
   moveSpeed: 0

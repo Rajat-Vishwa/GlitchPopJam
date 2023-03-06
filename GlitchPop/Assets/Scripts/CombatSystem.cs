@@ -5,13 +5,31 @@ using UnityEngine;
 public class CombatSystem : MonoBehaviour
 {
     public Transform attackPoint;
+    public Animator animator;
     public CharacterStats stats;
     public float overlapCircleRadius = 0.25f;
     public float currentHealth;
 
     void Start(){
-        stats = gameObject.GetComponent<CharacterManager>().currentCharacter.GetComponent<CharacterStats>();
+        stats = gameObject.GetComponentInChildren<CharacterStats>();
+        attackPoint = transform.Find("AttackPoint");
         currentHealth = stats.maxHealth;
+    }
+
+    void FixedUpdate(){
+        Regen();
+
+        if(currentHealth <= 0){
+            animator = gameObject.GetComponentInChildren<Animator>();
+            animator.SetTrigger("die");
+            stats.alive = false;
+            enabled = false;
+        }
+    }
+
+
+    void Regen(){
+        currentHealth += stats.regenRate * Time.fixedDeltaTime;
     }
 
     public void Attack(){
@@ -24,6 +42,8 @@ public class CombatSystem : MonoBehaviour
     }
 
     public void TakeDamage(float damage){
+        animator = gameObject.GetComponentInChildren<Animator>();
+        animator.SetTrigger("takeDamage");
         currentHealth -= damage;
     }
 }
