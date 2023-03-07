@@ -12,14 +12,40 @@ public class GameManager : MonoBehaviour
     public bool analogGlitch;
     public bool digitalGlitch;
     public VolumeProfile volume;
+
+    public float maxDuration = 5f, minDuration = 1f;
+    public float maxGap = 20f, minGap = 5f;
+    public float gapTimer, durTimer;
+    public GameObject player;
     void Start()
     {
         volume = gameObject.GetComponent<Volume>().profile;
+        player = GameObject.FindGameObjectWithTag("Player");
+        GenerateEvent();
     }
 
     void Update()
     {
+        if(gapTimer <= 0){
+            if(durTimer <= 0){
+                glitch = false;
+                player.GetComponent<CharacterManager>().ChangeCharacter();
+                GenerateEvent();
+            }else{
+                glitch = true;
+                durTimer -= Time.deltaTime;
+            }
+        }else gapTimer -= Time.deltaTime;
+
         Glitch();
+        
+    }
+    
+    void GenerateEvent(){
+        float gap = Random.Range(minGap, maxGap);
+        float dur = Random.Range(minDuration, maxDuration);
+        durTimer = dur;
+        gapTimer = gap;
     }
 
     void Glitch(){
