@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
     //public bool isJumping, wantJump, isGrounded;
     //public float jumpSpeed = 100;
     //public float footOverLapCircleRadius = 0.1f;
-    public float moveSpeed = 100;
     public bool attacking = false;
     public Animator animator;
     public CombatSystem combatScript;
@@ -24,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
         animator = gameObject.GetComponentInChildren<Animator>();
         combatScript = gameObject.GetComponent<CombatSystem>();
         stats = gameObject.GetComponentInChildren<CharacterStats>();
+        spriteTransform = stats.transform;
     }
 
     void Update()
@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
         Vector2 vel = Vector2.zero;
-        vel.x = !attacking ? moveDir * moveSpeed * Time.fixedDeltaTime : 0;
+        vel.x = !attacking ? moveDir * stats.moveSpeed * Time.fixedDeltaTime : 0;
         vel.y = rb.velocity.y;
         // if(wantJump && isGrounded){
         //     wantJump = false;

@@ -15,7 +15,6 @@ public class CharacterManager : MonoBehaviour
         maxCharacters = Characters.Length;
         movementScript = gameObject.GetComponent<PlayerMovement>();
         combatScript = gameObject.GetComponent<CombatSystem>();
-        ChangeCharacter();
     }
 
     void Update()
