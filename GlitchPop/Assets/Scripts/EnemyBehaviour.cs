@@ -15,13 +15,14 @@ public class EnemyBehaviour : MonoBehaviour
     public Transform player;
     public float attackCoolDownTimer;
 
-    void Awake()
+    void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponentInChildren<Animator>();
         combatScript = gameObject.GetComponent<CombatSystem>();
         stats = gameObject.GetComponentInChildren<CharacterStats>();
+        spriteTransform = stats.transform;
         combatScript.animator = animator;
         spawnPoint = transform.position.x;
         moveDir = 1;
@@ -29,13 +30,14 @@ public class EnemyBehaviour : MonoBehaviour
 
     void Update()
     {
+        enabled = stats.alive;
+
         float xpos = transform.position.x;
         
         if(Mathf.Abs(player.position.x - transform.position.x) <= stats.moveRange){
             float dist = player.position.x - transform.position.x;
             moveDir = Mathf.Sign(dist);
             dist = Mathf.Abs(dist);
-
             if(dist <= stats.attackDist){
                 if(attackCoolDownTimer <= 0){
                     moveDir = 0;

@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        enabled = stats.alive;
+
         moveDir = Input.GetAxisRaw("Horizontal");
         attacking = Input.GetMouseButton(0);
         // if(Input.GetKeyDown("space") && isGrounded){

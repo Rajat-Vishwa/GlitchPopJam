@@ -20,6 +20,8 @@ public class CharacterManager : MonoBehaviour
 
     void Update()
     {
+        enabled = combatScript.stats.alive;
+
         if(Switch){
             ChangeCharacter();
             Switch = false;

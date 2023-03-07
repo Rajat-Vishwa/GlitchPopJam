@@ -11,4 +11,10 @@ public class CharacterStats : MonoBehaviour
     public float attackDist = 1f;
     public float moveRange = 10;
     public bool alive = true;
+
+    void Update(){
+        if(!alive){
+            Destroy(transform.parent.gameObject, 3);
+        }
+    }
 }
