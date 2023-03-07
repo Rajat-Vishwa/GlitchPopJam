@@ -3580,41 +3580,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!60 &1346528066095059414
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4317413623544541242}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.53125, y: 0.90625}
-    newSize: {x: 0.53125, y: 0.9375}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.10713959, y: 0.8718791}
-      - {x: -0.112098694, y: 0.56692576}
-      - {x: -0.23606873, y: 0.347615}
-      - {x: -0.23800659, y: 0.12984335}
-      - {x: -0.17396545, y: 0.03055203}
-      - {x: 0.17396545, y: 0.026732981}
-      - {x: 0.23249817, y: 0.1262244}
-      - {x: 0.23220062, y: 0.3390125}
-      - {x: 0.110946655, y: 0.56156194}
-      - {x: 0.109046936, y: 0.8737886}
 --- !u!4 &1515940676567768659
 Transform:
   m_ObjectHideFlags: 0
@@ -13686,27 +13651,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &1787354208079235256
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4317413623544541242}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 5
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1906757732759963850
 GameObject:
   m_ObjectHideFlags: 0
@@ -20467,41 +20411,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!60 &3415248312604486804
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3415248312604486824}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.59375, y: 0.90625}
-    newSize: {x: 0.59375, y: 0.90625}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.1420784, y: 0.8766531}
-      - {x: -0.14023209, y: 0.87850285}
-      - {x: -0.13964081, y: 0.68690956}
-      - {x: -0.2629013, y: 0.5358883}
-      - {x: -0.26438904, y: 0.2854643}
-      - {x: -0.14183426, y: 0.03185737}
-      - {x: 0.14395905, y: 0.03185737}
-      - {x: 0.26322937, y: 0.2809676}
-      - {x: 0.26647186, y: 0.52946997}
-      - {x: 0.13779068, y: 0.6887593}
 --- !u!212 &3415248312604486806
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20554,27 +20463,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &3415248312604486807
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3415248312604486824}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 5
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &3415248312604486824
 GameObject:
   m_ObjectHideFlags: 0
@@ -20585,8 +20473,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3415248312604486825}
   - component: {fileID: 3415248312604486806}
-  - component: {fileID: 3415248312604486804}
-  - component: {fileID: 3415248312604486807}
   m_Layer: 6
   m_Name: PF Village Props - Pot 03
   m_TagString: Untagged
@@ -20872,8 +20758,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4317413623544541245}
   - component: {fileID: 4317413623544541244}
-  - component: {fileID: 1346528066095059414}
-  - component: {fileID: 1787354208079235256}
   m_Layer: 6
   m_Name: PF Village Props - Pot 01 (1)
   m_TagString: Untagged
