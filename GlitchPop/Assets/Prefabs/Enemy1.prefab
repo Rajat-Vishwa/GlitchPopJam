@@ -1056,10 +1056,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  maxHealth: 100
+  maxHealth: 75
   attackDamage: 7.5
   moveSpeed: 150
-  regenRate: 2
+  regenRate: 1
   attackRate: 2
   attackDist: 1
   moveRange: 8
