@@ -301,10 +301,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 2
-  maxHealth: 200
+  maxHealth: 150
   attackDamage: 15
   moveSpeed: 120
-  regenRate: 2
+  regenRate: 0.5
   attackRate: 1.5
   attackDist: 1
   moveRange: 5
