@@ -14,7 +14,7 @@ public class CharacterStats : MonoBehaviour
 
     void Update(){
         if(!alive){
-            Destroy(transform.parent.gameObject, 3);
+            Destroy(transform.parent.gameObject, 1);
         }
     }
 }
