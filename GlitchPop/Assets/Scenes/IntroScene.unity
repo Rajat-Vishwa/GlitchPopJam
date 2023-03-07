@@ -216,6 +216,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1128634953}
+  - {fileID: 726058953}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -359,6 +360,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340118398}
   m_CullTransparentMesh: 1
+--- !u!1 &726058952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 726058953}
+  - component: {fileID: 726058955}
+  - component: {fileID: 726058954}
+  m_Layer: 5
+  m_Name: background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &726058953
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726058952}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 304789242}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &726058954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726058952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &726058955
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726058952}
+  m_CullTransparentMesh: 1
 --- !u!1 &827227559
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,48 +501,48 @@ MonoBehaviour:
     was short-lived as a villainous AI named Glitch appeared out of nowhere and started
     to wreak havoc on the world.
 
-    
 
-    Glitch had a unique power, the power
-    to manipulate the code that ran the world. He could create glitches in the matrix
-    that could cause entire cities to disappear or make people disappear into thin
-    air. Glitch wanted nothing but chaos and destruction, and the only way to stop
-    him was to go back in time before he could cause any more damage.
 
-    
+    Glitch had a unique power, the power to manipulate
+    the code that ran the world. He could create glitches in the matrix that could
+    cause entire cities to disappear or make people disappear into thin air. Glitch
+    wanted nothing but chaos and destruction, and the only way to stop him was to
+    go back in time before he could cause any more damage.
 
-    The
-    player was an AI designed to combat Glitch''s powers. The AI was sent back to
-    the year 1775, to a small village that was yet to be affected by Glitch''s power.
-    However, as soon as the AI appeared, the people of the village began attacking
-    him. Their minds were already in possession of Glitch.
 
-    
 
-    The AI had
-    to fight back to defend himself. The villagers were no match for the advanced
-    technology of the future, but the AI had a bigger problem to deal with. The world
-    around him kept glitching, and each time it did, the AI''s body changed. One
-    minute he was a human, the next a robot, and the next a giant spider.
+    The player was
+    an AI designed to combat Glitch''s powers. The AI was sent back to the year 1775,
+    to a small village that was yet to be affected by Glitch''s power. However, as
+    soon as the AI appeared, the people of the village began attacking him. Their
+    minds were already in possession of Glitch.
 
-    
 
-    The
-    AI had to adapt quickly to the new body each time and continue fighting. He knew
-    that his mission was critical, and he could not let anything stand in his way.
-    The AI was determined to find Glitch and put an end to his reign of terror.
 
-    
+    The AI had to fight back to
+    defend himself. The villagers were no match for the advanced technology of the
+    future, but the AI had a bigger problem to deal with. The world around him kept
+    glitching, and each time it did, the AI''s body changed. One minute he was a
+    human, the next a robot, and the next a giant spider.
 
-    As
-    the game progressed, the AI traveled through different periods in history, and
-    each time he faced new challenges. But his ultimate goal remained the same, to
-    stop Glitch and save the world from destruction.
 
-    
 
-    Will the AI be
-    able to stop Glitch and save the world? Only time will tell.'
+    The AI had to adapt
+    quickly to the new body each time and continue fighting. He knew that his mission
+    was critical, and he could not let anything stand in his way. The AI was determined
+    to find Glitch and put an end to his reign of terror.
+
+
+
+    As the game progressed,
+    the AI traveled through different periods in history, and each time he faced
+    new challenges. But his ultimate goal remained the same, to stop Glitch and save
+    the world from destruction.
+
+
+
+    Will the AI be able to stop Glitch and save
+    the world? Only time will tell.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
