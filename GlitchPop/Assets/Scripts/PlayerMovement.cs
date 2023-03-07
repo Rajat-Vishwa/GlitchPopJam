@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+//using UnityEngine.Audio;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public CombatSystem combatScript;
     public CharacterStats stats;
+    //private AudioSource walkingSound;
 
     public float attackCoolDownTimer;
    
@@ -59,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
         // }
 
         if(moveDir != 0){
+            //walkingSound.play();
             animator.SetBool("walking", true);
             spriteTransform.localScale = new Vector3(-moveDir, 1, 1);
         }else{
